@@ -17,3 +17,4 @@ tags:
 
 # 卷积神经网络(CNN)
 1. Why we need CNN?
+2. How doe CNN come from?
