@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Jing's Notes - CNN 算法小结(1)
+title:      CNN 算法小结(1)
 subtitle:   暂定的副标题
 date:       2019-04-02
 author:     Jing
@@ -8,7 +8,7 @@ header-img: img/post-bg-CNN.jpg
 catalog: true
 tags:
     - Machine Learning
-    - Notes
+    - Jing's Notes
     - CNN
 ---
 
