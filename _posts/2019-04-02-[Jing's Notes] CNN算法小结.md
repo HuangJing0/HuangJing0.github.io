@@ -26,8 +26,9 @@ CNNs和传统神经网络相似，都由神经元组成，神经元中有能进�
 
 不同之处在于CNN算法中使用图像作为输入数据，在此假设下对神经网络结构中增加了一些特有属性，使向前传播函数得以高效实现，并减少了网络结构中参数的数量。
 
-由于图像通常有$1000^2$个像素，即一个图像就有高达$1000^2$个数据点/特征，相应的高维权重空间很难处理。而实际上，对于spatial patterns来说，并不是每一个数据点/特征都重要。这些数据点/特征会有大量的相同性质，因此如果对原始图像像素进行适当预处理，如只提取图像中spatial correlation或patterns，可以大大降低权重空间的维度。
+由于图像通常有![](http://latex.codecogs.com/gif.latex?\\1000^2)个像素，即一个图像就有高达![](http://latex.codecogs.com/gif.latex?\\1000^2)个数据点/特征，相应的高维权重空间很难处理。而实际上，对于spatial patterns来说，并不是每一个数据点/特征都重要。这些数据点/特征会有大量的相同性质，因此如果对原始图像像素进行适当预处理，如只提取图像中spatial correlation或patterns，可以大大降低权重空间的维度。
 ### 算法结构
+<img src="http://yuml.me/diagram/scruffy/class/[note: You can stick notes on diagrams too!{bg:cornsilk}],[Customer]<>1-orders 0..*>[Order], [Order]++*-*>[LineItem], [Order]-1>[DeliveryMethod], [Order]*-*>[Product], [Category]<->[Product], [DeliveryMethod]^[National], [DeliveryMethod]^[International]" >
 
 ### 算法原理
 卷积神经网络(Convolutional Neural Network)的主要构成：
