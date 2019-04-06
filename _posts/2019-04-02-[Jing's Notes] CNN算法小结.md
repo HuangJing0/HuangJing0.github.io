@@ -30,7 +30,7 @@ CNNs和传统神经网络相似，都由神经元组成，神经元中有能进�
 ### 算法结构
 
 
-<img src=https://raw.githubusercontent.com/HuangJing0/HuangJing0.github.io/master/img/post-CNN1-structure.png >
+<img src="https://raw.githubusercontent.com/HuangJing0/HuangJing0.github.io/master/img/post-CNN1-structure.png">
 
 ### 算法原理
 卷积神经网络(Convolutional Neural Network)的主要构成：
