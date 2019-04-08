@@ -1,0 +1,31 @@
+---
+layout:     post
+title:      [Tips for Blog] 在Blog显示数学公式
+<!-- subtitle:   背景和算法原理 -->
+date:       2019-04-07
+author:     Jing
+header-img: img/post-bg-CNN.jpg
+catalog: true
+export_on_save:
+html: true
+tags:
+    - Blog
+---
+
+
+> 在Blog显示数学公式
+
+**在_includes/head.html中添加:**
+```
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      inlineMath: [['$','$']]
+    }
+  });
+</script>
+```
+
+[Reference](https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages)
