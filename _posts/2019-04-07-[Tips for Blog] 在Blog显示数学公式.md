@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      [Tips for Blog] 在Blog显示数学公式
-<!-- subtitle:   背景和算法原理 -->
+subtitle:    
 date:       2019-04-07
 author:     Jing
 header-img: img/post-bg-CNN.jpg
