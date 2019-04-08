@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Tips for Blog - 在Blog显示数学公式
+title:      Tips for Blog - 显示数学公式
 subtitle:   让GitHub Page支持Latex公式
 date:       2019-04-07
 author:     Jing
@@ -13,7 +13,7 @@ tags:
 ---
 
 
-> 在Blog显示数学公式
+> 在Blog中显示数学公式
 
 **在_includes/head.html中添加:**
 ```
