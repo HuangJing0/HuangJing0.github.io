@@ -13,7 +13,7 @@ tags:
 ---
 
 
-> 在GitHub Page中显示数学公式
+> 在GitHub Page显示数学公式
 
 **在_includes/head.html中添加:**
 ```
