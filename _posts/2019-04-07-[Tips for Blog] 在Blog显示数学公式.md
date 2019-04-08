@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      [Tips for Blog] 在Blog显示数学公式
-subtitle:    
+subtitle:   让GitHub Page支持Latex公式
 date:       2019-04-07
 author:     Jing
-header-img: img/post-bg-CNN.jpg
+header-img: img/post-bg-tips.jpg
 catalog: true
 export_on_save:
 html: true
