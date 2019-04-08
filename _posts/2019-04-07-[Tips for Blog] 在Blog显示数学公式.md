@@ -9,7 +9,7 @@ catalog: true
 export_on_save:
 html: true
 tags:
-    - Blog
+    - Tips
 ---
 
 
