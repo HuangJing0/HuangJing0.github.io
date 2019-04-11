@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Fluid Based Simulation Methods - ENO and WENO(FVM version)
+title:      Numerical methods - ENO and WENO(FVM version)
 subtitle:   ENO/WENO 的原理和推导
 date:       2019-04-09
 author:     Jing
