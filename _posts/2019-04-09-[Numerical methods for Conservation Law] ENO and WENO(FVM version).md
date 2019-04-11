@@ -14,7 +14,7 @@ tags:
 ---
 
 
->ENO/WENO
+>The first ENOENO(Essentially Non-Oscillatory) scheme was developed by Harten, Engquist, Osher and Chakravarthy in [1987](https://www.sciencedirect.com/science/article/pii/0021999187900313). The first weighted version of ENO(WENO) was developed in [1994](https://www.sciencedirect.com/science/article/pii/S0021999184711879?via%3Dihub).
 
 ### 有限体积法(FVM)简介
 
