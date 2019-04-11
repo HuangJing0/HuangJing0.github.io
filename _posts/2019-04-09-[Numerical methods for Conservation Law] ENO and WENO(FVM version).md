@@ -4,7 +4,7 @@ title:      Numerical methods - ENO and WENO(FVM version)
 subtitle:   ENO/WENO 的原理和推导
 date:       2019-04-09
 author:     Jing
-header-img: img/post-bg-CL.jpg
+header-img: img/post-bg-CL.png
 catalog: true
 export_on_save:
 html: true
