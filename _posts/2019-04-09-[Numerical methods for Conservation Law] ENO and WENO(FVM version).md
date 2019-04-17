@@ -25,7 +25,7 @@ ENO: adaptively choose stencil to reduce oscillation.
 $u_{j+\frac{1}{2}}^- = \bar{u}_j$: 直接用平均值代替点值。
 #### 2nd order
 在stencil$[\bar{u}_{j-1},\bar{u}_{j}]$或$[\bar{u}_{j},\bar{u}_{j+1}]$上计算 $u_{j+\frac{1}{2}}^-$:
-\[\]
+\[u^-_{j+\frac{1}{2}} = \]
 
 ### WENO推导
 
