@@ -14,7 +14,7 @@ tags:
 ---
 
 
->ENO(Essentially Non-Oscillatory)方法是一类求偏微分方程数值解的高分辨率方法(High-resolution scheme),由[Harten, Engquist, Osher 和 Chakravarthy](https://www.sciencedirect.com/science/article/pii/0021999187900313)在1987年提出. 1994年，[Liu, Chan 和 Osher](https://www.sciencedirect.com/science/article/pii/S0021999184711879?via%3Dihub) 研究了 weighted version of ENO(WENO). In 1996, [Guang-Sh 与 Chi-Wang Shu](https://www.sciencedirect.com/science/article/pii/S0021999196901308) 发展了新的WENO方法并命名为WENO-JS。
+>ENO(Essentially Non-Oscillatory)方法是一类求偏微分方程数值解的高分辨率方法(High-resolution scheme),由[Harten, Engquist, Osher 和 Chakravarthy](https://www.sciencedirect.com/science/article/pii/0021999187900313)在1987年提出. 1994年，[Liu, Chan 和 Osher](https://www.sciencedirect.com/science/article/pii/S0021999184711879?via%3Dihub) 研究了 weighted version of ENO(WENO). In 1996, [Guang-Sh 与 Chi-Wang Shu](https://www.sciencedirect.com/science/article/pii/S0021999196901308) 发展了新的WENO方法并命名为WENO-JS。
 
 ### 有限体积法(FVM)简介
 given cell average $\bar{u}_j$, compute point values $u_{j+\frac{1}{2}}^-$.
