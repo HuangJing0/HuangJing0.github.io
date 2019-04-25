@@ -20,7 +20,7 @@ tags:
 given cell average $\bar{u}_j$, compute point values $u_{j+\frac{1}{2}}^-$.
 
 ### 间断变换
-ENO: adaptively choose stencil to reduce oscillation. Given the cell average Find a $k$-th order accurate estimates for the values of $u(x)$ at the cell boundaries. Particularly the basis of this approximation is formed by polynomials of degree at most k − 1.
+ENO: adaptively choose stencil to reduce oscillation. Given the cell average Find a $k$-th order accurate estimates for the values of $u(x)$ at the cell boundaries. Particularly the basis of this approximation is formed by polynomials of degree at most $k − 1$.
 #### 1st order
 $u_{j+\frac{1}{2}}^- = \bar{u}_j$: 直接用平均值代替点值。
 #### 2nd order
