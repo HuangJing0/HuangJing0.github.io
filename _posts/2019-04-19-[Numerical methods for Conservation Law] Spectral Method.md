@@ -17,7 +17,7 @@ tags:
 >Spectral method(谱方法)
 
 ### 连续变换
-given cell average $\bar{u}_j$, compute point values $u_{j+\frac{1}{2}}^-$.
+给定区域均值$\bar{u}_j$, 计算点值$u_{j+\frac{1}{2}}^-$.
 
 ### 间断变换
 ENO: adaptively choose stencil to reduce oscillation. Given the cell average Find a $k$-th order accurate estimates for the values of $u(x)$ at the cell boundaries. Particularly the basis of this approximation is formed by polynomials of degree at most $k − 1$.
