@@ -1,7 +1,7 @@
 ---
 layout:     post
-title: Weak solution and Riemann problem
-subtitle:  弱解和黎曼问题
+title:      Introduction to Conservation Law
+subtitle:   守恒律方程简介
 date:       2019-04-29
 author:     Jing
 header-img: img/post-bg-CL.png
