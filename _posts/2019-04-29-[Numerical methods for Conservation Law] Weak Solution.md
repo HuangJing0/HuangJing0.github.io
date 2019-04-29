@@ -19,12 +19,12 @@ tags:
 初始条件为$u(x,0)=u_0$的守恒律方程$u_t+f(u)_x=0$，其弱解$u(x,t)$满足：对于任意的测试函数(test function)$\phi\in C_c^1(\mathbf{R}\times\mathbf{R})$,
 \[\int_0^{\infty}\int_{-\infty}^{\infty}[\phi_t u +\phi_xf(u)]dxdt=-\int_{-\infty}^{\infty}\phi(x,0)u_0(x)dx.\]
 
-#### 积分形式(Integral form)
+#### 推导
 
-#### 偏微分方程形式(PDE form)
+### 黎曼问题(Riemann Problem)
 
-### 守恒律的一般定义
+### 
 
-#### 特征线(Characteristics)
+####
 
-#### 常见例子
+####
