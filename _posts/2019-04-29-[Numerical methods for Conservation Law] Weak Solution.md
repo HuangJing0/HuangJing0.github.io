@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Weak solution and Riemann Problem
-subtitle:   弱解和黎曼问题
+title:      弱解和黎曼问题
+subtitle:   
 date:       2019-04-29
 author:     Jing
 header-img: img/post-bg-CL.png
