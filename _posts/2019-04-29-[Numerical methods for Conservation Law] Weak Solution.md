@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Introduction to Conservation Law
-subtitle:   守恒律方程简介
+title:      Weak solution
+subtitle:   弱解
 date:       2019-04-29
 author:     Jing
 header-img: img/post-bg-CL.png
