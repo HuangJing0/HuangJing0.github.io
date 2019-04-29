@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Introduction to Conservation Law
+title:      1.Introduction to Conservation Law
 subtitle:   守恒律方程简介
 date:       2019-04-29
 author:     Jing

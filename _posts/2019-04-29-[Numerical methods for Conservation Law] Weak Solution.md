@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Weak solution, Riemann problem
+title:      2.Weak solution, Riemann problem
 subtitle:   弱解,黎曼问题
 date:       2019-04-29
 author:     Jing
