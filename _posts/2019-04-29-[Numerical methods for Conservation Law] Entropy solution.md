@@ -20,7 +20,7 @@ The entropy solution to $u_t+f(u)_x=0$ is the limit of $u^{\epsilon}$, the solut
 
 #### 推导
 
-### 黎曼问题(Riemann Problem)
+### Rankine-Hugoniot condition
 
 ### 
 
