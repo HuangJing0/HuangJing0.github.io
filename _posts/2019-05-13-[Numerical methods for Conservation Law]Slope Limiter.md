@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Slope limiter
-subtitle:   斜率限制器
+subtitle:   斜率限制器
 date:       2019-05-13
 author:     Jing
 header-img: img/post-bg-CL.png
