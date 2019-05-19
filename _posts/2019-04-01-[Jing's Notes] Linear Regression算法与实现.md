@@ -15,10 +15,10 @@ tags:
 ---
 
 
-> CNN 学习小记
+> Regressions
 
 
-# 卷积神经网络(CNN) --- 背景和算法原理
+## Linear Regression
 ### 背景
 Fukushima(1980)--- Neo-Congnitron;<br>
 LeCun(1998)--- Convolutional Neural Networks(CNNs, or ConvNets)
@@ -37,3 +37,11 @@ CNNs和传统神经网络相似，都由神经元组成，神经元中有能进�
 卷积神经网络(Convolutional Neural Network)的主要构成：
 1. 卷积层(Convolutional Layer)
 2. 池化层(Pooling Layer)
+
+## Lasso Regression
+
+## Ridge Regression
+
+## Elastic net
+
+## Polynomial Regression
