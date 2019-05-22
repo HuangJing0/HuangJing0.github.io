@@ -36,6 +36,7 @@ size in feets^2 (x) | price in 1000's (y) |
 1534 | 315
 852 | 178
 ...|...
+
 假设我们有m个训练数据(training data)，x作为输入变量或特征变量，y作为输出变量或目标变量。首先定义线性的预测函数(predict function):
 
 \[p(x) = \theta_0 + \theta_1x.\]
