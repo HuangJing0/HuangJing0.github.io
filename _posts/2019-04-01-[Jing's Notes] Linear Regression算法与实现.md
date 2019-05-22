@@ -42,7 +42,11 @@ size in feets^2 (x) | price in 1000's (y) |
 \[p(x) = c_0 + c_1x,\quad L(c_0,c_1)=\sum_{i=1}^{m}(p(x_i)-y_i)^2.\]
 则对应的最小二乘线性回归问题为:
 
-\[\min_{c_0,c_1}: L(c_0,c_1)=\sum_{i=1}^{m}(p(x_i)-y_i)^2.\] 
+\[\min_{c_0,c_1}: L(c_0,c_1)=\sum_{i=1}^{m}(p(x_i)-y_i)^2.\]
+
+此问题的最优解$c_0, c_1$应满足:
+
+\[\frac{\partical L}{\partical c_j} = 0, \ j = 0,1\]
 
 ##### 2. 多变量线性回归
 
