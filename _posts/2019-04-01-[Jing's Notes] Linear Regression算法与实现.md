@@ -46,7 +46,11 @@ size in feets^2 (x) | price in 1000's (y) |
 
 此问题的最优解$c_0, c_1$应满足:
 
-\[\frac{\partial  L}{\partial c_j} = 0, \ j = 0,1\]
+\[\frac{\partial  L}{\partial c_j} = 0, \ j = 0,1.\]
+
+可以解出:
+
+\[c_1 = \frac{\sum_{i=1}^{m}x_iy_i-\frac{1}{m}\sum_{i=1}{m}x_i\sum_{i=1}{m}y_i}{\sum_{i=1}{m}x_i^2 - \frac{1}{m}(\sum_{i=1}{m}x_i)^2}, \ c_0 = \frac{1}{m}\sum_{i=1}^{m}y_i - c_1\frac{1}{m}\sum_{i=1}^{m}x_i.\]
 
 ##### 2. 多变量线性回归
 
