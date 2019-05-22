@@ -46,7 +46,7 @@ size in feets^2 (x) | price in 1000's (y) |
 
 此问题的最优解$c_0, c_1$应满足:
 
-\[\frac{\partical L}{\partical c_j} = 0, \ j = 0,1\]
+\[\frac{\partial  L}{\partial c_j} = 0, \ j = 0,1\]
 
 ##### 2. 多变量线性回归
 
