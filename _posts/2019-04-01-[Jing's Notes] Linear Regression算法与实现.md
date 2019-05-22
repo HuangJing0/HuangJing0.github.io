@@ -37,9 +37,11 @@ size in feets^2 (x) | price in 1000's (y) |
 852 | 178
 ...|...
 
-假设我们有m个训练数据(training data)，x作为输入变量或特征变量，y作为输出变量或目标变量。首先定义线性的预测函数(predict function):
+假设我们有m个训练数据(training data)，x作为输入变量或特征变量，y作为输出变量或目标变量。首先定义线性的预测函数(predict function)$p(x)$和损失函数(loss function)$L(c_0,c_1)$:
 
-\[p(x) = \theta_0 + \theta_1x.\]
+\[p(x) = c_0 + c_1x,\]
+\[L(c_0,c_1)=\sum_{i=1}^{m}(p(x_i)-y_i)^2.\]
+
 ##### 2. 多变量线性回归
 
 
