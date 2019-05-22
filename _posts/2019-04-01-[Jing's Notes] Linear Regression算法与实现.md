@@ -37,12 +37,12 @@ size in feets^2 (x) | price in 1000's (y) |
 852 | 178
 ...|...
 
-假设我们有m个训练数据(training data)，x作为输入变量或特征变量，y作为输出变量或目标变量。首先定义线性的预测函数(predict function) $p(x)$ 和损失函数(loss function) $L(c_0,c_1)$:
+假设我们有m个训练数据(training data)，$x$作为输入变量或特征变量，$y$作为输出变量或目标变量。首先定义线性的预测函数(predict function) $p(x)$ 和损失函数(loss function) $L(c_0,c_1)$:
 
-\[p(x) = c_0 + c_1x,\quad L(c_0,c_1)=\sum_{i=1}^{m}(p(x_i)-y_i)^2.\]
+\[p(x) = c_0 + c_1x,\quad L(c_0,c_1)=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2.\]
 则对应的最小二乘线性回归问题为:
 
-\[\min_{c_0,c_1}: L(c_0,c_1)=\sum_{i=1}^{m}(p(x_i)-y_i)^2.\]
+\[\min_{c_0,c_1}: L(c_0,c_1)=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2.\]
 
 此问题的最优解$c_0, c_1$应满足:
 
@@ -50,9 +50,14 @@ size in feets^2 (x) | price in 1000's (y) |
 
 可以解出:
 
-\[c_1 = \frac{\sum_{i=1}^{m}x_iy_i-\frac{1}{m}\sum_{i=1}^{m}x_i\sum_{i=1}^{m}y_i}{\sum_{i=1}^{m}x_i^2 - \frac{1}{m}(\sum_{i=1}^{m}x_i)^2}, \ c_0 = \frac{1}{m}\sum_{i=1}^{m}y_i - c_1\frac{1}{m}\sum_{i=1}^{m}x_i.\]
+\[c_1 = \frac{\sum_{i=1}^{m}x^{(i)}y^{(i)}-\frac{1}{m}\sum_{i=1}^{m}x^{(i)}\sum_{i=1}^{m}y^{(i)}}{\sum_{i=1}^{m}(x^{(i)})^2 - \frac{1}{m}(\sum_{i=1}^{m}x^{(i)})^2}, \ c_0 = \frac{1}{m}\sum_{i=1}^{m}y^{(i)} - c_1\frac{1}{m}\sum_{i=1}^{m}x^{(i)}.\]
 
 ##### 2. 多变量线性回归
+当然大部分的情况下，因变量不可能只与单一特征有关，我们需要考虑多变量(multiple variables)问题。现假设有$n$个特征，记$x_j^{(i)}$为第$i$个训练数据的第$j$个特征。此时相应的 $p(x)$和 $L(c_0,c_1,...,c_n)$如下:
+
+\[p(x) = c_0 + c_1x_1 + c_2x_2 + ... + c_nx_n,\quad L(c_0,c_1,...,c_n)=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2.\]
+
+##### 3. 梯度下降法(Gradient Descent)
 
 
 ## 2. Lasso Regression
