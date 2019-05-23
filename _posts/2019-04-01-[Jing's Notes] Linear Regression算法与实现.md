@@ -39,18 +39,18 @@ size in feets^2 (x) | price in 1000's (y) |
 
 假设我们有m个训练数据(training data)，$x$作为输入变量或特征变量，$y$作为输出变量或目标变量。首先定义线性的预测函数(predict function) $p(x)$ 和损失函数(loss function) $L(c_0,c_1)$:
 
-\[p(x) = c_0 + c_1x,\quad L(c_0,c_1)=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2.\]
+$$p(x) = c_0 + c_1x,\quad L(c_0,c_1)=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2.$$
 则对应的最小二乘线性回归问题为:
 
-\[\min_{c_0,c_1}: L(c_0,c_1)=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2.\]
+$$\min_{c_0,c_1}: L(c_0,c_1)=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2.$$
 
 此问题的最优解$c_0, c_1$应满足:
 
-\[\frac{\partial  L}{\partial c_j} = 0, \ j = 0,1.\]
+$$\frac{\partial  L}{\partial c_j} = 0, \ j = 0,1.$$
 
 可以解出:
 
-\[c_1 = \frac{\sum_{i=1}^{m}x^{(i)}y^{(i)}-\frac{1}{m}\sum_{i=1}^{m}x^{(i)}\sum_{i=1}^{m}y^{(i)}}{\sum_{i=1}^{m}(x^{(i)})^2 - \frac{1}{m}(\sum_{i=1}^{m}x^{(i)})^2}, \ c_0 = \frac{1}{m}\sum_{i=1}^{m}y^{(i)} - c_1\frac{1}{m}\sum_{i=1}^{m}x^{(i)}.\]
+$$c_1 = \frac{\sum_{i=1}^{m}x^{(i)}y^{(i)}-\frac{1}{m}\sum_{i=1}^{m}x^{(i)}\sum_{i=1}^{m}y^{(i)}}{\sum_{i=1}^{m}(x^{(i)})^2 - \frac{1}{m}(\sum_{i=1}^{m}x^{(i)})^2}, \ c_0 = \frac{1}{m}\sum_{i=1}^{m}y^{(i)} - c_1\frac{1}{m}\sum_{i=1}^{m}x^{(i)}.$$
 
 ##### 1.2. 多变量线性回归
 当然大部分的情况下，因变量不可能只与单一特征有关，我们需要考虑多变量(multiple variables)问题。现假设有$n$个特征，记$x_j^{(i)}$为第$i$个训练数据的第$j$个特征。此时相应的预测函数 $p(x)$和损失函数 $L(c_0,c_1,...,c_n)$如下:
@@ -72,7 +72,7 @@ $$X =
 ##### 1.3. 梯度下降法(Gradient Descent)
 在大部分情况下，最优化问题无法求得解析解，需要使用数值优化方法求解。梯度下降法就是其中一类经典方法，通过迭代
 
-\[c := c -\alpha \nabla L\]
+$$c := c -\alpha \nabla L$$
 
 从而使得$L$取得最小值。这里$\alpha$为学习步长(Learning rate)。
 
