@@ -78,9 +78,17 @@ $$X =
   &= \nabla\left(\mathbf{c}^TX^TX\mathbf{c} -\mathbf{c}^TX^TY - Y^TX\mathbf{c}+ Y^TY\right)\\
   &= \nabla tr\left(\mathbf{c}^TX^TX\mathbf{c} -\mathbf{c}^TX^TY - Y^TX\mathbf{c}+ Y^TY\right)\\
   &= \nabla \left(tr\mathbf{c}^TX^TX\mathbf{c} -2trY^TX\mathbf{c}\right)\\
-  &= \left(X^TX\mathbf{c} + X^TX\mathbf{c} -2Y^TX\right)\\
-  &= 2\left(X^TX\mathbf{c} - Y^TX\right)\\
+  &= \left(X^TX\mathbf{c} + X^TX\mathbf{c} -2X^TY\right)\\
+  &= 2\left(X^TX\mathbf{c} - X^TY\right)\\
   \end{align}$$
+
+  * 得到normal equation: $X^TX\mathbf{c} - X^TY = 0$，解得: $\mathbf{c} = (X^TX)^{-1}X^TY$。
+
+**Remark** 若矩阵$(X^TX)$不可逆，此时有两种情况:
+* 特征变量有冗余，即有部分特征向量间线性相关(linear dependent);
+* 太多特征变量，即$m\leq n$。
+
+这时需要删除多余的特征量或者使用正则项。
 
 
 ##### 1.3. 梯度下降法(Gradient Descent)
