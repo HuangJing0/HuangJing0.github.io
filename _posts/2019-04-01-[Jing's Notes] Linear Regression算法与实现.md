@@ -58,17 +58,29 @@ $$c_1 = \frac{\sum_{i=1}^{m}x^{(i)}y^{(i)}-\frac{1}{m}\sum_{i=1}^{m}x^{(i)}\sum_
 $$p(x) = c_0 + c_1x_1 + c_2x_2 + ... + c_nx_n,\quad L(c_0,c_1,...,c_n)=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2.$$
 
 而对于最优化问题$\min_{c_0,c_1,...,c_n}: L(c_0,c_1,...,c_n),$ 使用正规方程法(normal equation)可以解析地求出最优解为:
-$$ (c_0,c_1,...,c_n)^T = (X^TX)^{-1}X^TY,$$
+$$ \mathbf{c} = (c_0,c_1,...,c_n)^T = (X^TX)^{-1}X^TY,$$
 
 $$X =
- \begin{vmatrix}
-   1 & x_1^{(1)} & ...& x_n^{(1)} \\
+ \begin{vmatrix} 1 & x_1^{(1)} & ...& x_n^{(1)} \\
    1 & x_1^{(2)} & ...& x_n^{(2)} \\
     & &  ...& \\
    1 & x_1^{(m)} & ...& x_n^{(m)}\\
   \end{vmatrix}
   , Y = (y^{(1)},y^{(2)},...,y^{(m)})^T.$$
-  (需要补一补具体求解过程。)
+
+**具体求解过程**: 同单变量的情况一样，我们需要求解 $c$ 使得$\nabla L = 0$。
+  * 将$L(c_0,c_1,...,c_n)$写成矩阵形式:
+  $$L(\mathbf{c})=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2=(X\mathbf{c} - Y)^T(Xc - Y);$$
+  * 对$\mathbf{c}$求导得:
+  $$\begin{align}
+  \nabla L &=& \nabla\left((X\mathbf{c} - Y)^T(Xc - Y)\right)\\
+  &=& \nabla\left(\mathbf{c}^TX^TX\mathbf{c} -\mathbf{c}^TX^TY - Y^TX\mathbf{c}+ Y^TY\right)\\
+  &=& \nabla tr\left(\mathbf{c}^TX^TX\mathbf{c} -\mathbf{c}^TX^TY - Y^TX\mathbf{c}+ Y^TY\right)\\
+  &=& \nabla \left(tr\mathbf{c}^TX^TX\mathbf{c} -2trY^TX\mathbf{c}\right)\\
+  &=& \left(X^TX\mathbf{c} + X^TX\mathbf{c} -2Y^TX\right)\\
+  &=& 2\left(X^TX\mathbf{c} - Y^TX\right)\\
+  \end{align}$$
+
 
 ##### 1.3. 梯度下降法(Gradient Descent)
 在大部分情况下，最优化问题无法求得解析解，需要使用数值优化方法求解。梯度下降法就是其中一类经典方法，通过迭代
