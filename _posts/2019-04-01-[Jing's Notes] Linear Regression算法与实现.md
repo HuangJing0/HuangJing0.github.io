@@ -72,13 +72,14 @@ $$X =
   * 将$L(c_0,c_1,...,c_n)$写成矩阵形式:
   $$L(\mathbf{c})=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2=(X\mathbf{c} - Y)^T(Xc - Y);$$
   * 对$\mathbf{c}$求导得:
+
   $$\begin{align}
-  \nabla L &=& \nabla\left((X\mathbf{c} - Y)^T(Xc - Y)\right)\\
-  &=& \nabla\left(\mathbf{c}^TX^TX\mathbf{c} -\mathbf{c}^TX^TY - Y^TX\mathbf{c}+ Y^TY\right)\\
-  &=& \nabla tr\left(\mathbf{c}^TX^TX\mathbf{c} -\mathbf{c}^TX^TY - Y^TX\mathbf{c}+ Y^TY\right)\\
-  &=& \nabla \left(tr\mathbf{c}^TX^TX\mathbf{c} -2trY^TX\mathbf{c}\right)\\
-  &=& \left(X^TX\mathbf{c} + X^TX\mathbf{c} -2Y^TX\right)\\
-  &=& 2\left(X^TX\mathbf{c} - Y^TX\right)\\
+  \nabla L &= \nabla\left((X\mathbf{c} - Y)^T(Xc - Y)\right)\\
+  &= \nabla\left(\mathbf{c}^TX^TX\mathbf{c} -\mathbf{c}^TX^TY - Y^TX\mathbf{c}+ Y^TY\right)\\
+  &= \nabla tr\left(\mathbf{c}^TX^TX\mathbf{c} -\mathbf{c}^TX^TY - Y^TX\mathbf{c}+ Y^TY\right)\\
+  &= \nabla \left(tr\mathbf{c}^TX^TX\mathbf{c} -2trY^TX\mathbf{c}\right)\\
+  &= \left(X^TX\mathbf{c} + X^TX\mathbf{c} -2Y^TX\right)\\
+  &= 2\left(X^TX\mathbf{c} - Y^TX\right)\\
   \end{align}$$
 
 
