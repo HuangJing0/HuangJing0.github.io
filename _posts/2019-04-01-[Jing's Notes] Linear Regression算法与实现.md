@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Jing's Notes - Linear Regression, Polynomial Regression, Lasso Regression, Ridge Regression 和 Elastic Net
+title:      Jing's Notes - 线性回归, 多项式回归, Lasso 回归, Ridge 回归 和 Elastic Net
 subtitle:   算法原理与Python实现
 date:       2019-04-01
 author:     Jing
