@@ -129,31 +129,7 @@ $$p(x) = c_0 + c_1x + c_2x^2 + c_3x^3 + ...$$
 
 **Remark** 回归系数为$c_1, c_2,..., c_m$，不包括bias系数$c_0$。
 
-#### 3.1. Lasso Regression
-
-Lasso(Least Absolute Shrinkage and Selection Operator)作为一种变量选择技术，使用 **回归系数的$l_1$范数**，使得一些系数变小，一些绝对值较小的系数甚至直接变为$0$，也算是同时结合了删除多余的特征量和使用$l_2$正则项的优点。
-
-###### 原理
-Lasso回归(套索回归)作为一种用于估计稀疏参数的线性模型，尤为适用于参数数目缩减(故在压缩感知中应用广泛)。 **数学上，Lasso是在线性模型上加上了一个$l_1$正则项**:
-
-$$L(\mathbf{c})=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2 + \lambda\|\mathbf{c}\|_ {1}.$$
-
-其中参数$\lambda$控制了稀疏参数估计的惩罚程度
-
-###### 应用
-**基于Lasso的特征选择**: 由于Lasso回归后的参数大部分为$0$，而那些不为$0$的参数对应的特征变量，可以作为其他的模型的特征。可以在不改变模型的准去率情况下减小特征维度。
-
-最具现实意义的应用: 文本分类。文本的原始特征维度几乎是整个字典，而一个文本的单词量基本上在$100~1000$之间，这使得文本分类中的设计矩阵是一个极其稀疏的矩阵(实际测试中，其稀疏度可以达到$1%$以下)。这类问题中，$l_1$正则项十分有用。(相关内容参见)
-
-###### 优点
-* Lasso回归模型将具有相关性的特征变量推向彼此，并避免使得其中一个有极大正系数另一个有极大负系数的情况。
-* 许多不相关的特征变量系数直接变为$0$，自动进行了特征选择。
-
-###### 缺点
-* Lasso回归在删除多余特征变量时，牺牲了一定的正确性。
-
-
-#### 3.2. Ridge Regression
+#### 3.1. Ridge Regression
 Ridge回归是一种对回归系数作控制的正则化回归(Regularized regression，另有叫法Penalized model/Shrinkage method)，降低系数的幅度和波动，从而提高模型的精度。
 ###### 原理
 **数学上，Ridge回归是在线性模型上加上了一个$l_2$正则项**：
@@ -161,11 +137,39 @@ Ridge回归是一种对回归系数作控制的正则化回归(Regularized regre
 $$L(\mathbf{c})=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2 + \frac{\lambda}{2}\|\mathbf{c}\|^2_ {2}.$$
 其中惩罚参数$\lambda$对系数做出二阶惩罚，又称$L_2$ Penalty 参数。当$\lambda\rightarrow 0$时，Ridge回归就与原先的线性规划无异。当$\lambda\rightarrow\infty$时，所有的系数都趋于$0$。
 ###### 优点
-* 同Lasso回归一样，Ridge回归模型也会将具有相关性的特征变量推向彼此，并避免使得其中一个有极大正系数另一个有极大负系数的情况。
+* Ridge回归模型也会将具有相关性的特征变量推向彼此，并避免使得其中一个有极大正系数另一个有极大负系数的情况。
 * 许多不相关的特征变量系数接近于$0$，降低了噪音。
 
 ###### 缺点
 * Ridge回归模型保留了所有特征变量，模型解释能力不佳。不具备特征选择(Feature Selection)功能。
+
+
+#### 3.2. Lasso Regression
+
+Lasso(Least Absolute Shrinkage and Selection Operator)作为一种变量选择技术([Tibshirani, R., 1996](https://pdfs.semanticscholar.org/1b65/af0b2847cf6edb1461eda659f08be27bc76d.pdf))，使用 **回归系数的$l_1$范数**，使得一些系数变小，一些绝对值较小的系数甚至直接变为$0$，也算是同时结合了删除多余的特征量和使用$l_2$正则项的优点。
+
+###### 原理
+Lasso回归(套索回归)作为一种用于估计稀疏参数的线性模型，尤为适用于参数数目缩减(故在压缩感知中应用广泛)。 **数学上，Lasso是在线性模型上加上了一个$l_1$正则项**:
+
+$$L(\mathbf{c})=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2 + \lambda\|\mathbf{c}\|_ {1}.$$
+
+参数$\lambda$控制了稀疏参数估计的惩罚程度。
+
+###### 应用
+**基于Lasso的特征选择**: 由于Lasso回归后的参数大部分为$0$，而那些不为$0$的参数对应的特征变量，可以作为其他的模型的特征。可以在不改变模型的准去率情况下减小特征维度。
+
+最具现实意义的应用: 文本分类。文本的原始特征维度几乎是整个字典，而一个文本的单词量基本上在$100~1000$之间，这使得文本分类中的设计矩阵是一个极其稀疏的矩阵(实际测试中，其稀疏度可以达到$1%$以下)。这类问题中，$l_1$正则项十分有用。(相关内容参见)
+
+###### 优点
+* 同Ridge回归一样，Lasso回归模型将具有相关性的特征变量推向彼此，并避免使得其中一个有极大正系数另一个有极大负系数的情况。
+* 许多不相关的特征变量系数直接变为$0$，自动进行了特征选择。
+
+###### 缺点
+* Lasso回归在删除多余特征变量时，牺牲了一定的正确性。
+* Lasso回归不consistent。针对此问题，有adaptive Lasso([Zou, H. (2006)](https://amstat.tandfonline.com/doi/abs/10.1198/016214506000000735))。
+* 不能作group selection。相关改进 Group Lasso([Yuan M, Lin Y,2006](http://www.columbia.edu/~my2550/papers/glasso.final.pdf))。
+
+
 
 #### 3.3. Elastic net
 Elastic net(弹性网络)则([Zou H, Hastie T. 2005](https://www.jstor.org/stable/3647580?seq=1#metadata_info_tab_contents))结合了以上两种正则方法。这样的组合允许学习得到一个只要少量参数是非零系数的模型，类似于Lasso但仍保持一些像Ridge回归的正则性质：
@@ -189,3 +193,7 @@ $$L(\mathbf{c})=\sum_{i=1}^{m}(p(x^{(i)})-y^{(i)})^2 + \lambda\rho\|\mathbf{c}\|
 * 在有多重共线性很明显时，效果显著。
 
 #### 3.4. 几何结构对比
+
+
+---
+以上方法各有利弊，若想同时满足无偏性(unbiasedness)、稀疏性(sparsity)和连续性(continuity)，可以使用MCP(minimax concave penalty)([Cun-Hui Zhang, 2010](https://arxiv.org/abs/1002.4734))和SCAD(smoothly clipped absolute deviations)([Fan, Li, 2001](http://www.personal.psu.edu/ril4/research/penlike.pdf))。
