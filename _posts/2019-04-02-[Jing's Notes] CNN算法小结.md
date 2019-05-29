@@ -10,8 +10,6 @@ export_on_save:
 html: true
 tags:
     - Machine Learning
-    - Notes
-    - CNN
 ---
 
 
