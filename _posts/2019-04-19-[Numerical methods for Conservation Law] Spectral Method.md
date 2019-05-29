@@ -10,7 +10,6 @@ export_on_save:
 html: true
 tags:
     - Numerical methods
-    - Conservation Law
 ---
 
 

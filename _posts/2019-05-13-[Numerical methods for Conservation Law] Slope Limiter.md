@@ -9,7 +9,6 @@ catalog: true
 export_on_save:
 html: true
 tags:
-    - Conservation Law
     - Numerical methods
 ---
 
