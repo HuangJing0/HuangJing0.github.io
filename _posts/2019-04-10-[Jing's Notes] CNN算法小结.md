@@ -2,7 +2,7 @@
 layout:     post
 title:      Jing's Notes - CNN 学习小结(1)
 subtitle:   背景和算法原理
-date:       2019-04-02
+date:       2019-04-10
 author:     Jing
 header-img: img/post-bg-CNN.jpg
 catalog: true
