@@ -33,7 +33,6 @@ tags:
 * 用cat命令读入一个文件，然后使用>>将文本流追加到另一个文件的末位
   > cat file1.txt >> file2.txt # 将file1.txt追加到file2.txt的末尾
 
-
 ## 3. github
 * 检查电脑是否通过github仓库的sshkey认证
    > ssh -T git@github.com
