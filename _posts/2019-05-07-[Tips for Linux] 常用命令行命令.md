@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Tips - 常用命令行命令
-subtitle:   记录自己用到(记不住)的命令行命令
+subtitle:   记录自己用到(记不住)的命令行命令
 date:       2019-05-07
 author:     Jing
 header-img: img/post-bg-tips.jpg
