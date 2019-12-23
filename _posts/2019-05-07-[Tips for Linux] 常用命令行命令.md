@@ -25,7 +25,11 @@ tags:
 
 * 截取的文件可以用重定向输入到新的文件中：
    > head -100  filename >a.txt
-
+   
+* 统计txt文件行数, 显示文档的行数和字数
+  > wc -lc 文档.txt
+  
+  
 ## 2. 将两个txt文件合并成一个文件
 * 用cat命令从文件中读入两个文件，将重定向到一个新的文件
   > cat file1.txt file2.txt > file.txt # 将file1.txt和file2.txt合并到file.txt
