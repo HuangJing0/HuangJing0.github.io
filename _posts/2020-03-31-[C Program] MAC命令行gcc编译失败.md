@@ -4,7 +4,7 @@ title:      Tips - MAC命令行gcc编译失败
 subtitle:   fatal error: _stdio.h: No such file or directory
 date:       2020-03-31
 author:     Jing
-header-img: img/post-bg-tips.jpg
+header-img: img/post-bg-ProC.png
 catalog: true
 export_on_save:
 html: true
@@ -12,12 +12,13 @@ tags:
     - C
 ---
 
+
 嫌弃Xcode的代码高亮，卸载XCode转投vscode的怀抱之后，gcc 编译文件时报错：
 
-```C
-fatal error: _stdio.h: No such file or directory
-#include <_stdio.h>
- ```
+
+	fatal error: _stdio.h: No such file or directory
+	#include <_stdio.h>
+
 
 
 原因：gcc 编译时找不到C的运行库，默认的目录/usr/include不存在；
