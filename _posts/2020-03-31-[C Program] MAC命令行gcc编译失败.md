@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Tips - MAC命令行gcc编译失败
-subtitle:   fatal error: _stdio.h: No such file or directory
+title:      C Program - MAC命令行gcc编译失败
+subtitle:   _stdio.h No such file or directory
 date:       2020-03-31
 author:     Jing
 header-img: img/post-bg-ProC.png
