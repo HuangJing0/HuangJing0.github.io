@@ -71,7 +71,6 @@ tags:
 	
 Reference site is [here](https://www.stat.uchicago.edu/~lekheng/courses/302/classics/)	
 
-
 Original Imformations: 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 [1] Trefethen NA-net posting of 9 May 1993

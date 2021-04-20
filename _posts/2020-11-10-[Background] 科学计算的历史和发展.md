@@ -35,7 +35,7 @@ tags:
 	* 有限差分法
 	* 有限元法
 	* FFT
-	* 单纯形法; 
+	* 单纯形法
 	* Monte-Carlo法
 	* 正交基/正交函数
 	* 样条函数
@@ -137,7 +137,7 @@ Prof. Trefethen提到，他的预测中不那么具体和技术的部分有一�
 
 20年前和“人工智能替代人类”类似的顾虑。
 # Summary:
-Prof. Trefethen的未来50年预测已经过去近一半，可以对工程和学术上的法则趋势有一个整体的对比。
+Prof. Trefethen的未来50年预测已经过去近一半，可以对工程和学术上的发展趋势有一个整体的对比。
 # References: 
 
 [Trefethen L N. Predictions for scientific computing fifty years from now[J]. 1998.](https://people.maths.ox.ac.uk/trefethen/publication/PDF/2000_88.pdf)
